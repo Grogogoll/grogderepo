@@ -1763,11 +1763,11 @@
     "@types/node" "*"
 
 "@types/node@*":
-  version "22.15.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.15.2.tgz#1db55aa64618ee93a58c8912f74beefe44aca905"
-  integrity sha512-uKXqKN9beGoMdBfcaTY1ecwz6ctxuJAcUlwE55938g0ZJ8lRxwAZqRz2AJ4pzpt5dHdTPMB863UZ0ESiFUcP7A==
+  version "24.10.1"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-24.10.1.tgz#91e92182c93db8bd6224fca031e2370cef9a8f01"
+  integrity sha512-GNWcUTRBgIRJD5zj+Tq0fKOJ5XZajIiBroOF0yvj2bSU1WvNdYS/dn9UxwsujGW4JX06dnHyjV2y9rRaybH0iQ==
   dependencies:
-    undici-types "~6.21.0"
+    undici-types "~7.16.0"
 
 "@types/node@>=6":
   version "18.0.3"
@@ -2122,7 +2122,7 @@ acorn@^8.14.0:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.14.1.tgz#721d5dc10f7d5b5609a891773d47731796935dfb"
   integrity sha512-OvQ/2pUDKmgfCg++xsTX1wGxfTaszcHVcTctW4UJB4hibJx2HXxxO5UmVgyjMa+ZDsiaf5wWLXYpRWMmBI0QHg==
 
-acorn@^8.15.0, acorn@^8.8.2:
+acorn@^8.15.0:
   version "8.15.0"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.15.0.tgz#a360898bc415edaac46c8241f6383975b930b816"
   integrity sha512-NZyJarBfL7nWwIq+FDL6Zp/yHEhePMNnnJ0y3qfieCrmNvYct8uvtiV41UvlSe6apAfk0fY1FbWx+NwfmpvtTg==
@@ -10351,7 +10351,7 @@ schema-utils@^3.1.1:
     ajv "^6.12.5"
     ajv-keywords "^3.5.2"
 
-schema-utils@^4.0.0:
+schema-utils@^4.0.0, schema-utils@^4.3.0:
   version "4.3.3"
   resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-4.3.3.tgz#5b1850912fa31df90716963d45d9121fdfc09f46"
   integrity sha512-eflK8wEtyOE6+hsaRVPxvUKYCpRgzLqDTb8krvAsRIwOGlHoSgYLgBXoubGgLd2fT41/OUYdb48v4k4WWHQurA==
@@ -10361,7 +10361,7 @@ schema-utils@^4.0.0:
     ajv-formats "^2.1.1"
     ajv-keywords "^5.1.0"
 
-schema-utils@^4.3.0, schema-utils@^4.3.2:
+schema-utils@^4.3.2:
   version "4.3.2"
   resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-4.3.2.tgz#0c10878bf4a73fd2b1dfd14b9462b26788c806ae"
   integrity sha512-Gn/JaSk/Mt9gYubxTtSn/QCV4em9mpAPiR1rqy/Ocu19u/G9J5WWdNoUT4SiV6mFC3y6cxyFcFwdzPM3FgxGAQ==
@@ -11242,9 +11242,9 @@ teeny-tap@^0.2.0:
   integrity sha512-HnA3I2sxRQe/SZgQTQgQvvA17DhfzhBJ1LfSOXZ5VUTbxGLvnAqUef84ZGNNSEbk1ZMEIDeghTHZagJ7LifAgg==
 
 terser-webpack-plugin@^5.2.5, terser-webpack-plugin@^5.3.11:
-  version "5.3.14"
-  resolved "https://registry.yarnpkg.com/terser-webpack-plugin/-/terser-webpack-plugin-5.3.14.tgz#9031d48e57ab27567f02ace85c7d690db66c3e06"
-  integrity sha512-vkZjpUjb6OMS7dhV+tILUW6BhpDR7P2L/aQSAv+Uwk+m8KATX9EccViHTJR2qDtACKPIYndLGCyl3FMo+r2LMw==
+  version "5.3.15"
+  resolved "https://registry.yarnpkg.com/terser-webpack-plugin/-/terser-webpack-plugin-5.3.15.tgz#0a26860b765eaffa8e840170aabc5b3a3f6f6bb9"
+  integrity sha512-PGkOdpRFK+rb1TzVz+msVhw4YMRT9txLF4kRqvJhGhCM324xuR3REBSHALN+l+sAhKUmz0aotnjp5D+P83mLhQ==
   dependencies:
     "@jridgewell/trace-mapping" "^0.3.25"
     jest-worker "^27.4.5"
@@ -11252,23 +11252,13 @@ terser-webpack-plugin@^5.2.5, terser-webpack-plugin@^5.3.11:
     serialize-javascript "^6.0.2"
     terser "^5.31.1"
 
-terser@^5.10.0:
+terser@^5.10.0, terser@^5.31.1:
   version "5.44.1"
   resolved "https://registry.yarnpkg.com/terser/-/terser-5.44.1.tgz#e391e92175c299b8c284ad6ded609e37303b0a9c"
   integrity sha512-t/R3R/n0MSwnnazuPpPNVO60LX0SKL45pyl9YlvxIdkH0Of7D5qM2EVe+yASRIlY5pZ73nclYJfNANGWPwFDZw==
   dependencies:
     "@jridgewell/source-map" "^0.3.3"
     acorn "^8.15.0"
-    commander "^2.20.0"
-    source-map-support "~0.5.20"
-
-terser@^5.31.1:
-  version "5.39.0"
-  resolved "https://registry.yarnpkg.com/terser/-/terser-5.39.0.tgz#0e82033ed57b3ddf1f96708d123cca717d86ca3a"
-  integrity sha512-LBAhFyLho16harJoWMg/nZsQYgTrg5jXOn2nCYjRUcZZEdE3qa2zb8QEDRUGVZBW4rlazf2fxkg8tztybTaqWw==
-  dependencies:
-    "@jridgewell/source-map" "^0.3.3"
-    acorn "^8.8.2"
     commander "^2.20.0"
     source-map-support "~0.5.20"
 
@@ -11581,10 +11571,10 @@ unbzip2-stream@1.4.3, unbzip2-stream@^1.0.9:
     buffer "^5.2.1"
     through "^2.3.8"
 
-undici-types@~6.21.0:
-  version "6.21.0"
-  resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-6.21.0.tgz#691d00af3909be93a7faa13be61b3a5b50ef12cb"
-  integrity sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==
+undici-types@~7.16.0:
+  version "7.16.0"
+  resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-7.16.0.tgz#ffccdff36aea4884cbfce9a750a0580224f58a46"
+  integrity sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw==
 
 unherit@^1.0.4:
   version "1.1.3"
